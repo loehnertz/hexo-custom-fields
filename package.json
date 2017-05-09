@@ -1,0 +1,29 @@
+{
+  "name": "hexo-custom-fields",
+  "version": "1.0.0",
+  "description": "A Hexo plugin that allows the default Markdown source files to be used as custom fields",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:loehnertz/hexo-custom-fields.git"
+  },
+  "keywords": [
+    "hexo",
+    "plugin",
+    "markdown",
+    "md",
+    "custom",
+    "fields",
+    "custom",
+    "fields"
+  ],
+  "author": "Jakob Löhnertz (www.jakob.codes)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/loehnertz/hexo-custom-fields/issues"
+  },
+  "homepage": "https://github.com/loehnertz/hexo-custom-fields#readme"
+}
