@@ -1,70 +1,15 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "https://github.com/loehnertz/hexo-custom-fields",
-        "scope": null,
-        "escapedName": null,
-        "name": null,
-        "rawSpec": "https://github.com/loehnertz/hexo-custom-fields",
-        "spec": "git+https://github.com/loehnertz/hexo-custom-fields.git",
-        "type": "hosted",
-        "hosted": {
-          "type": "github",
-          "ssh": "git@github.com:loehnertz/hexo-custom-fields.git",
-          "sshUrl": "git+ssh://git@github.com/loehnertz/hexo-custom-fields.git",
-          "httpsUrl": "git+https://github.com/loehnertz/hexo-custom-fields.git",
-          "gitUrl": "git://github.com/loehnertz/hexo-custom-fields.git",
-          "shortcut": "github:loehnertz/hexo-custom-fields",
-          "directUrl": "https://raw.githubusercontent.com/loehnertz/hexo-custom-fields/master/package.json"
-        }
-      },
-      "/home/jakob/Projekte/other/jakob.codes"
-    ]
-  ],
-  "_from": "git+https://github.com/loehnertz/hexo-custom-fields.git",
-  "_id": "hexo-custom-fields@1.0.0",
-  "_inCache": true,
-  "_location": "/hexo-custom-fields",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "https://github.com/loehnertz/hexo-custom-fields",
-    "scope": null,
-    "escapedName": null,
-    "name": null,
-    "rawSpec": "https://github.com/loehnertz/hexo-custom-fields",
-    "spec": "git+https://github.com/loehnertz/hexo-custom-fields.git",
-    "type": "hosted",
-    "hosted": {
-      "type": "github",
-      "ssh": "git@github.com:loehnertz/hexo-custom-fields.git",
-      "sshUrl": "git+ssh://git@github.com/loehnertz/hexo-custom-fields.git",
-      "httpsUrl": "git+https://github.com/loehnertz/hexo-custom-fields.git",
-      "gitUrl": "git://github.com/loehnertz/hexo-custom-fields.git",
-      "shortcut": "github:loehnertz/hexo-custom-fields",
-      "directUrl": "https://raw.githubusercontent.com/loehnertz/hexo-custom-fields/master/package.json"
-    }
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "git+https://github.com/loehnertz/hexo-custom-fields.git#7eec52b6e0743046eaa946c2c908cf83b7c2ba64",
-  "_shasum": "d9a404e7d1ea8fb049a16d2e0a50622ef3ad7d6c",
-  "_shrinkwrap": null,
-  "_spec": "https://github.com/loehnertz/hexo-custom-fields",
-  "_where": "/home/jakob/Projekte/other/jakob.codes",
-  "author": {
-    "name": "Jakob Löhnertz",
-    "url": "www.jakob.codes"
-  },
-  "bugs": {
-    "url": "https://github.com/loehnertz/hexo-custom-fields/issues"
-  },
-  "dependencies": {},
+  "name": "hexo-custom-fields",
+  "version": "1.0.0",
   "description": "A Hexo plugin that allows the default Markdown source files to be used as custom fields",
-  "devDependencies": {},
-  "gitHead": "7eec52b6e0743046eaa946c2c908cf83b7c2ba64",
-  "homepage": "https://github.com/loehnertz/hexo-custom-fields#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:loehnertz/hexo-custom-fields.git"
+  },
   "keywords": [
     "hexo",
     "plugin",
@@ -75,18 +20,10 @@
     "custom",
     "fields"
   ],
+  "author": "Jakob Löhnertz (www.jakob.codes)",
   "license": "MIT",
-  "main": "index.js",
-  "name": "hexo-custom-fields",
-  "optionalDependencies": {},
-  "readme": "# hexo-custom-fields\nA Hexo plugin that allows the default Markdown source files to be used as custom fields\n",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/loehnertz/hexo-custom-fields.git"
+  "bugs": {
+    "url": "https://github.com/loehnertz/hexo-custom-fields/issues"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "1.0.0"
+  "homepage": "https://github.com/loehnertz/hexo-custom-fields#readme"
 }
