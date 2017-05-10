@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/loehnertz/hexo-custom-fields/issues"
   },
-  "homepage": "https://github.com/loehnertz/hexo-custom-fields#readme"
+  "homepage": "https://github.com/loehnertz/hexo-custom-fields#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
 }
