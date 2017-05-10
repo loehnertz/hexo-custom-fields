@@ -18,7 +18,8 @@ hexo.extend.helper.register('custom_field', function(type, title, field) {
     }
     data = data["data"];
 
-    var hit = _.find(data, ['title', title])[field];
+    var target = _.find(data, ['title', title]);
+    var hit = target[field];
 
     return hit;
 });
