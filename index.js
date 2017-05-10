@@ -9,8 +9,14 @@ var fs = require('fs');
 var path = require('path');
 var _ = require('lodash');
 
-hexo.extend.helper.register('custom_field', function(title, field) {
-    var data = hexo["database"]["_models"]["Page"]["data"];
+hexo.extend.helper.register('custom_field', function(type, title, field) {
+    var data = hexo["database"]["_models"];
+    if (type === 'posts') {
+        data = data["Post"];
+    } else if (type === 'pages') {
+        data = data["Page"];
+    }
+    data = data["data"];
 
     var hit = _.find(data, ['title', title])[field];
 
