@@ -5,8 +5,6 @@
  * Syntax: <%- custom_field('pages|posts, 'title_in_the_front_matter', 'name_of_the_field') %>
  */
 
-var fs = require('fs');
-var path = require('path');
 var _ = require('lodash');
 
 hexo.extend.helper.register('custom_field', function(type, title, field) {
