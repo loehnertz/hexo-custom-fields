@@ -8,11 +8,11 @@
 var _ = require('lodash');  // lodash's '_find()' is needed below
 
 /*
-*   The parameters:
-*   'type': the directory the function searches in (so either 'posts' or 'pages'),
-*   'title': has to match a 'title' given in the front-matter of a Markdown source file
-*   'field': the name of the actual field in the source file
-*/
+ *  The parameters:
+ *  'type': the directory the function searches in (so either 'posts' or 'pages'),
+ *  'title': has to match a 'title' given in the front-matter of a Markdown source file
+ *  'field': the name of the actual field in the source file
+ */
 function findCustomField(type, title, field) {
     var data = hexo["database"]["_models"];  // path to the data of all 'posts' and 'pages'
     if (type === 'posts') {
@@ -26,8 +26,7 @@ function findCustomField(type, title, field) {
     data = data["data"];  // the acutal data is in the 'data' object
 
     var target = _.find(data, ['title', title]);  // using 'lodash' to find the first occurence of the given 'title' in the data object
-    var hit = target[field];  // lastly extract the chosen 'field' from the target post or page source
 
-    return hit;  // finally return the found field
-};
+    return target[field];  // lastly extract the chosen 'field' from the target post or page source and return it
+}
 hexo.extend.helper.register('custom_field', findCustomField);  // this registers this plugin with Hexo
