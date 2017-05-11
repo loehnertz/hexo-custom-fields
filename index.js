@@ -7,7 +7,7 @@
 
 var _ = require('lodash');
 
-hexo.extend.helper.register('custom_field', function(type, title, field) {
+function findCustomField(type, title, field) {
     var data = hexo["database"]["_models"];
     if (type === 'posts') {
         data = data["Post"];
@@ -22,4 +22,5 @@ hexo.extend.helper.register('custom_field', function(type, title, field) {
     var hit = target[field];
 
     return hit;
-});
+};
+hexo.extend.helper.register('custom_field', findCustomField);
