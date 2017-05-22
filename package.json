@@ -1,6 +1,6 @@
 {
   "name": "hexo-custom-fields",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Hexo plugin that allows the default Markdown source files to be used as custom fields",
   "main": "index.min.js",
   "repository": {
