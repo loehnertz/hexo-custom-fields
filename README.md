@@ -1,5 +1,6 @@
 # hexo-custom-fields
-[![npm](https://img.shields.io/npm/dt/hexo-custom-fields.svg)](https://www.npmjs.com/package/hexo-custom-fields)    
+[![npm](https://img.shields.io/npm/dt/hexo-custom-fields.svg)](https://www.npmjs.com/package/hexo-custom-fields) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Floehnertz%2Fhexo-custom-fields.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Floehnertz%2Fhexo-custom-fields?ref=badge_shield)
+   
 A Hexo plugin that allows the default Markdown source files to be used as custom fields
 
 ## Motive
@@ -69,3 +70,7 @@ License
 -------
 
 [MIT](LICENSE)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Floehnertz%2Fhexo-custom-fields.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Floehnertz%2Fhexo-custom-fields?ref=badge_large)
