@@ -25,8 +25,17 @@ function findCustomField(type, title, field) {
     }
     data = data["data"];  // the acutal data is in the 'data' object
 
+    //Keep this for backwards compatibility:
     var target = _.find(data, ['title', title]);  // using 'lodash' to find the first occurence of the given 'title' in the data object
+    if (target === 'undefined') {
+        target = _.find(data, ['source', title]);
+    }
+    if (target === 'undefined') {
+        target = _.find(data, ['source', title + '.md']);
+    }
+
 
     return target[field];  // lastly extract the chosen 'field' from the target post or page source and return it
 }
+
 hexo.extend.helper.register('custom_field', findCustomField);  // this registers this plugin with Hexo
