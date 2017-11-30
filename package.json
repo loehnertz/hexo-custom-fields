@@ -10,7 +10,9 @@
   "scripts": {
     "build": "uglifyjs --compress --mangle --output ./index.js -- src/index.js",
     "dev": "cp ./src/index.js ./index.js",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "dev:watch": "watch 'npm run dev' ./src",
+    "build:watch": "watch 'npm run build' ./src"
   },
   "keywords": [
     "hexo",
@@ -35,6 +37,7 @@
     "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "uglify-js": "^3.2.0"
+    "uglify-js": "^3.2.0",
+    "watch": "^1.0.2"
   }
 }
