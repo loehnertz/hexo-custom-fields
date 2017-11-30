@@ -2,7 +2,7 @@
  *  "hexo-custom-fields"
  *  Made by Jakob Löhnertz (www.jakob.codes)
  *
- *  Syntax: <%- custom_field('posts|pages, 'title_in_the_front_matter', 'name_of_the_field') %>
+ *  Syntax: <%- custom_field('posts|pages, 'title_in_the_front_matter|source_file_path', 'name_of_the_field') %>
  */
 
 var _ = require('lodash');  // lodash's '_find()' is needed below
@@ -25,15 +25,16 @@ function findCustomField(type, title, field) {
     }
     data = data["data"];  // the acutal data is in the 'data' object
 
-    //Keep this for backwards compatibility:
+    //First search by 'title':
     var target = _.find(data, ['title', title]);  // using 'lodash' to find the first occurence of the given 'title' in the data object
-    if (target === 'undefined') {
+    if (target === undefined) {
+        //then search by source, asuming file extension provided:
         target = _.find(data, ['source', title]);
     }
-    if (target === 'undefined') {
+    if (target === undefined) {
+        //finally search by source by adding the .md extension:
         target = _.find(data, ['source', title + '.md']);
     }
-
 
     return target[field];  // lastly extract the chosen 'field' from the target post or page source and return it
 }

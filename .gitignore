@@ -3,3 +3,7 @@ node_modules/
 
 # JetBrains IDEs
 .idea/
+
+#
+hexo-custom-fields-*.tgz
+/index.js
