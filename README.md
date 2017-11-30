@@ -30,13 +30,13 @@ yarn add hexo-custom-fields
 Insert the `custom_field()` tag in your templates (in this example with EJS):
 
 ```
-<%- custom_field('posts|pages, 'title_in_the_front_matter', 'name_of_the_field') %>
+<%- custom_field('posts|pages, 'title_in_the_front_matter|source-file-path', 'name_of_the_field') %>
 ```
 
 Argument | Description
 -------- | -----------
 first     | 'posts' or 'pages' - this determines if the directory 'source/_posts' or 'source/' is used for that field - [Read more about the location in the Hexo documentation](https://hexo.io/docs/writing.html#Layout)
-second     |  'title' value in the front-matter of the Markdown source file - [Read more about the front-matter in the Hexo documentation](https://hexo.io/docs/front-matter.html)
+second     |  'title' value in the front-matter of the Markdown source file - [Read more about the front-matter in the Hexo documentation](https://hexo.io/docs/front-matter.html); Or, the path to the source file (e.g. 'about-us/index'). The .md extension is not necessary, but won't break it.
 third   |  the actual name of the chosen field. Below this table there is another one with possible options.
 
 
@@ -64,6 +64,14 @@ in the 'source' directory (which makes it a *'page'*)
 <%- custom_field('pages', 'front-page', 'birthday') %>
 ```
 
+**Example 2:**
+
+Display the custom field *'birthday'*
+from the Markdown source file *'about-us/contacts'*
+in the 'source' directory (which makes it a *'page'*)
+```
+<%- custom_field('pages', 'about-us/contacts', 'birthday') %>
+```
 
 License
 -------
