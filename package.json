@@ -34,10 +34,10 @@
     "hexo": ">= 3.0.0"
   },
   "dependencies": {
+    "uglify-js": "^3.2.0",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "uglify-js": "^3.2.0",
     "watch": "^1.0.2"
   }
 }
