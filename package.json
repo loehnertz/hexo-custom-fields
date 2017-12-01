@@ -8,7 +8,7 @@
     "url": "https://github.com/loehnertz/hexo-custom-fields.git"
   },
   "scripts": {
-    "build": "uglifyjs --compress --mangle --output ./index.js -- src/index.js",
+    "build": "npm install && uglifyjs --compress --mangle --output ./index.js -- src/index.js",
     "dev": "cp ./src/index.js ./index.js",
     "prepack": "npm run build",
     "dev:watch": "watch 'npm run dev' ./src",
