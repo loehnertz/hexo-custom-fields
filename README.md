@@ -30,7 +30,7 @@ yarn add hexo-custom-fields
 Insert the `custom_field()` tag in your templates (in this example with EJS):
 
 ```
-<%- custom_field('posts|pages, 'title_in_the_front_matter', 'name_of_the_field') %>
+<%- custom_field('posts|pages', 'title_in_the_front_matter', 'name_of_the_field') %>
 ```
 
 Argument | Description
